@@ -47,11 +47,11 @@ public class BasketSplitter {
 
             }
             // Wypisujemy mapę
-            for (Map.Entry<String, List<String>> entry : productDeliveryMap.entrySet()) {
+/*            for (Map.Entry<String, List<String>> entry : productDeliveryMap.entrySet()) {
                 System.out.print("Product: " + entry.getKey());
                 System.out.print("Delivery Types: " + entry.getValue());
                 System.out.println();
-            }
+            }*/
         }catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
         } catch (JSONException e) {
@@ -83,9 +83,11 @@ public class BasketSplitter {
         }
 
         // Wypisanie sposobów dosatwy i ich licznika
+/*
         for (Map.Entry<String, Integer> entry : deliveryTypeCounts.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
+*/
 
         // Result będzie mapą, którą zwrócimy
         Map<String, List<String>> result = new HashMap<>();
@@ -116,18 +118,18 @@ public class BasketSplitter {
                 }
             }
         }
-        System.out.println("\nProducts by Delivery Type:");
+/*        System.out.println("\nProducts by Delivery Type:");
         for (Map.Entry<String, List<String>> entry : result.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        }*/
         return result;
     }
 
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         BasketSplitter bask = new BasketSplitter("");
         List<String> lista = List.of("Fond - Chocolate", "Chocolate - Unsweetened", "Nut - Almond, Blanched, Whole", "Haggis", "Mushroom - Porcini Frozen", "Cake - Miini Cheesecake Cherry", "Sauce - Mint", "Longan", "Bag Clear 10 Lb", "Nantucket - Pomegranate Pear", "Puree - Strawberry", "Numi - Assorted Teas", "Apples - Spartan", "Garlic - Peeled", "Cabbage - Nappa", "Bagel - Whole White Sesame", "Tea - Apple Green Tea");
         bask.split(lista);
 
-    }
+    }*/
 
 }
