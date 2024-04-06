@@ -62,6 +62,10 @@ public class BasketSplitter {
     }
 
     public Map<String, List<String>> split(List<String> items) {
+        if(items.size() > 100){
+            throw new IllegalArgumentException("Too many items");
+        }
+
         // Tutaj będziemy zapisywać który sposób dostawy ma największą ilość produktów z możliwością ich dostawy
         Map<String, Integer> deliveryTypeCounts = new HashMap<>();
 
