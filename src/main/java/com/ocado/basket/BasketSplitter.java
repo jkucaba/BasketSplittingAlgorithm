@@ -125,11 +125,11 @@ public class BasketSplitter {
         return result;
     }
 
-/*    public static void main(String[] args) {
+    public static void main(String[] args) {
         BasketSplitter bask = new BasketSplitter("");
         List<String> lista = List.of("Fond - Chocolate", "Chocolate - Unsweetened", "Nut - Almond, Blanched, Whole", "Haggis", "Mushroom - Porcini Frozen", "Cake - Miini Cheesecake Cherry", "Sauce - Mint", "Longan", "Bag Clear 10 Lb", "Nantucket - Pomegranate Pear", "Puree - Strawberry", "Numi - Assorted Teas", "Apples - Spartan", "Garlic - Peeled", "Cabbage - Nappa", "Bagel - Whole White Sesame", "Tea - Apple Green Tea");
         bask.split(lista);
 
-    }*/
+    }
 
 }
