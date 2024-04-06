@@ -1,0 +1,1 @@
+# In this example we read the information about products from a JSON file, the file contains products and delivery types. The problem is to create a function that will split products given into diffrent deliveries, the goal is to put ads many products in one delivery as possible
